@@ -1,0 +1,17 @@
+# Ignore node_modules folder
+./server/node_modules
+./client/node_modules
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore files related to API keys
+./server/.env
+./client/.env
+.env
+
+# Ignore files related to package-lock 
+./server/package-lock.json
+./client/package-lock.json
+package-lock.json
