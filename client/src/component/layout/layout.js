@@ -89,6 +89,7 @@ const Layout = (props) => {
             theme: JSON.stringify(style),
         }
         const styleRes = await serverV1Instance.post('/usertheme/create', payload);
+
         if (styleRes.status === 200) {
             toast.success("theme saved !", {
                 position: toast.POSITION.TOP_RIGHT
@@ -106,6 +107,7 @@ const Layout = (props) => {
             theme: JSON.stringify(style),
         }
         const styleRes = await serverV1Instance.put('/usertheme/update', payload);
+        setConfig(true)
         if (styleRes.status === 200) {
             toast.success("theme updated !", {
                 position: toast.POSITION.TOP_RIGHT
